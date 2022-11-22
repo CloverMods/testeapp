@@ -236,3 +236,30 @@ ga{
 .fe img{
   border: solid 1px white;
 }
+.visitas{
+  background-color: var(--color-dark3);
+  border-radius: 7px;  
+  margin: 24px;
+  box-shadow: 0 0 7px black;
+  padding: 20px 30px;
+}
+.visitas h3{
+  color: white;
+}
+.visitas img{
+  width: 20%;
+}
+.ip{
+  background-color: var(--color-dark3);
+  border-radius: 7px;  
+  margin: 24px;
+  box-shadow: 0 0 7px black;
+  padding: 20px 30px;
+  color: white;
+}
+.hg{
+  color: white;
+}
+.bv{
+  color: white;
+}
