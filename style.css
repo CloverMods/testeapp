@@ -18,12 +18,12 @@
 
 body{
   min-height: 100vh;
-  background-color: #1C1C1C;
+  background-color: rgb(39, 39, 39);
   
 }
 
 .side-bar{
-  background: rgba(255,255,255 , 0.1);
+  background-color: var(--color-dark3);
   backdrop-filter:blur(15px);
   width: 290px;
   height: 100vh;
@@ -247,7 +247,7 @@ ga{
   color: white;
 }
 .visitas img{
-  width: 20%;
+  width: 25%;
 }
 .ip{
   background-color: var(--color-dark3);
@@ -262,4 +262,7 @@ ga{
 }
 .bv{
   color: white;
+}
+.amigo{
+  margin-top: 90%;
 }

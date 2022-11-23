@@ -1,259 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
-  <link rel="stylesheet" href="style.css">
- <meta name='viewport' content='width=device-width, initial-scale=1'>
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<link rel="shortcut icon" href="https://telegra.ph/file/a3374ddefcec357cd06b2.jpg" type="image/x-icon" />
-  <title>Clover-Mods</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="3; url=docs.html">
+  
+  <title>aguarde</title>
+  
+  
+  
+<style>
+body{
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100vh;
+  background:radial-gradient(darkred, black);
 
+}
+.wrapper{
+  width:200px;
+  height:60px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+.circle{
+  width:20px;
+  height:20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: red;
+  left:15%;
+  transform-origin: 50%;
+  animation: circle .5s alternate infinite ease;
+}
 
+@keyframes circle{
+  0%{
+    top:60px;
+    height:5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+  40%{
+    height:20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100%{
+    top:0%;
+  }
+}
+.circle:nth-child(2){
+  left:45%;
+  animation-delay: .2s;
+}
+.circle:nth-child(3){
+  left:auto;
+  right:15%;
+  animation-delay: .3s;
+}
+.shadow{
+  width:20px;
+  height:4px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top:62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left:15%;
+  filter: blur(1px);
+  animation: shadow .5s alternate infinite ease;
+}
+
+@keyframes shadow{
+  0%{
+    transform: scaleX(1.5);
+  }
+  40%{
+    transform: scaleX(1);
+    opacity: .7;
+  }
+  100%{
+    transform: scaleX(.2);
+    opacity: .4;
+  }
+}
+.shadow:nth-child(4){
+  left: 45%;
+  animation-delay: .2s
+}
+.shadow:nth-child(5){
+  left:auto;
+  right:15%;
+  animation-delay: .3s;
+}
+.wrapper p{
+  position: absolute;
+  top:75px;
+  font-family: 'Lato';
+  font-size: 20px;
+  letter-spacing: 12px;
+  color: #fff;
+}
+</style>
 </head>
+
 <body>
-
-  
-    <header>
-      <nav>
-        
-        <div class="menu-btn">
-          <i class="fas fa-bars"></i>
-        
-        </div>
-
-        
-        </div>
-
-
-        <div class="fe">
-
-          <img src="https://telegra.ph/file/a3374ddefcec357cd06b2.jpg">
-        </div>
-        <div class="side-bar">
-          <div class="close-btn">
-            <i class="fas fa-times"></i>
-          </div>
-            <div class="txt">
-<i class="fa fa-cog fa-spin fa-3x fa-fw"></i><i>Bem-vindo ❤️</i>
-            </div>
-<br>
-<hr>
-          <div class="menu">
-<!--
-            <div class="item">
-<a class="sub-btn"><i class='fa fa-file-image'></i>Anime-Sfw<i class="fas fa-angle-right dropdown"></i></a>
-<div class="sub-menu">
-<a class="sub-item" href="/loli?apikey=clover"> Megumin </a>
-<a class="sub-item" href="/nsfw/random?apikey=clover"> Aleatorias </a>
-         </div>
-         </div>
-            
-            <div class="item">
-<a class="sub-btn"><i class='fa fa-file-image'></i>Anime-Nsw<i class="fas fa-angle-right dropdown"></i></a>
-<div class="sub-menu">
-<a class="sub-item" href="/nsfw/miakhalifa?apikey=clover"> Mia Khalifa </a>
-<a class="sub-item" href="/nsfw/elisa-sanches?apikey=clover"> Elisa Sanches </a>
-<a class="sub-item" href="/nsfw/loli-gif?apikey=clover"> Nsfw GIF </a>
-<a class="sub-item" href="/nsfw/loli-pussy?apikey=clover"> Nsfw Pussy </a>
-<a class="sub-item" href="/nsfw/loli-yuri?apikey=clover"> Nsfw Yuri </a>
-<a class="sub-item" href="/nsfw/loli-masturbation?apikey=clover"> Nsfw Mastubation</a>
-           </div>
-            </div>
-            <div class="item">
-<a class="sub-btn"><i class='fa fa-download'></i>Download<i class="fas fa-angle-right dropdown"></i></a>
-<div class="sub-menu">
-
-<a class="sub-item" href="/youtube/playmp3?&q=edite anime minha xota e hit&apikey=clover">Youtube Play Audio</a>
- <a class="sub-item" href="/youtube/playmp4?&q=edite anime minha xota e hit&apikey=clover">Youtube Play Video</a>
- <a class="sub-item" href="/youtube/mp3?&link=https://www.youtube.com/watch?v=tIKutmqgzxo&t=100s&ab_channel=DJJEFFDEPL&apikey=clover">Ytmp3</a>
- <a class="sub-item" href="/youtube/mp4?&link=https://www.youtube.com/watch?v=tIKutmqgzxo&t=100s&ab_channel=DJJEFFDEPL&apikey=clover">Ytmp4</a>
- <a class="sub-item" href="/youtube/pesquisar?q=edite anime minha xota e hit&apikey=clover">Yt Pesquisa</a>
-          </div>
-          </div>
-          
-            <div class="item">
-<a class="sub-btn"><i class='fa fa-file-image'></i>Text pro<i class="fas fa-angle-right dropdown"></i></a>
-<div class="sub-menu">
-
- 
- <a class="sub-item" href="/textpro/summer?q=CloverMods&apikey=clover"> Summer </a>
- <a class="sub-item" href="/textpro/3d_business?q=CloverMods&apikey=clover"> 3D Business </a>
- <a class="sub-item" href="/textpro/3dgoldenblack?q=CloverMods&apikey=clover"> 3D Golden Black </a>
- <a class="sub-item" href="/textpro/thunder?q=CloverMods&apikey=clover"> Thunder </a>
- <a class="sub-item" href="/textpro/halloween?texto1=CloverMods&texto2=domina&apikey=clover"> Halloween </a>
-  <a class="sub-item" href="/textpro/vintage?texto1=CloverMods&texto2=domina&apikey=clover"> Vintage </a>
-
-          </div>
-                    </div>
-
--->
-
-            <div class="item">
-<a class="sub-btn"><i class='far fa-check-circle'></i>Bots de WhatsApp<i class="fas fa-angle-right dropdown"></i></a>
-<div class="sub-menu">
-<a href="https://youtu.be/80HdCb-Gxws" class="sub-item">Sophia-V1</a>
-<a href="https://youtu.be/Kt_--cFlBQk" class="sub-item">Nero-base</a>
-<a href="https://youtu.be/4yKkQP1TUVA" class="sub-item">Clover-Md</a>
-            </div>
-            </div>
-
-            </div>
-
-          </div>
-
-
-<audio autoplay="true" src="https://j.top4top.io/m_1772xeikf9.mp3">
-</audio>
-
-        </div>
-
-</div>
-
-      </nav>
-
-
-    </header>
-<div class="cabeca">
-  <p class="fas fa-database"> Clover-Mods</p>
-</div>
-  
-<div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
-
-</div>
- <div class="tutotxt"><br>
-   <center>
-   <div class="ain">
-     <br>
-      <img class="fotos" src="https://pa1.narvii.com/6810/6ca17ac222220521e1c966cce82a34a52e12f3c4_hq.gif"/>
-      <br><br>
-   </div>
-   <h2 class="bv">Bem-vindo(a) 🍀</h2>
-   <br>
-  </center>
-</div>
-<div class="tutotxt">
-<br>
-<h3 class="tutotxtt">~ Bot de WhatsApp ~</h3>
-<p class="tutotxtt">O que e um chat bot</p>
-<div class="aaaa">
-<br>
-<p>O chatbot é um programa que funciona como um robô automatizado no WhatsApp Business, ou seja, é possível ter um bot para o aplicativo. Esse software tem inúmeras funções e, dentro deste aplicativo popular, apresenta utilitários incríveis para a conversação e o gerenciamento de problemas com consumidores.</p>
-<br>
-<hr>
-<br>
-<h4 class="tutotxtt">Para que servem?</h4>
-<br>
-<p>O que é um Bot para WhatsApp? Um bot para WhatsAppoferece aos clientes uma experiência conversacional automatizada em tempo real diretamente no aplicativo, usando a API do WhatsApp para Negócios.</p>
-<br>
-<hr>
-<br>
-<h4 class="tutotxtt">Como funciona o bot?</h4>
-<br>
-<p>
-Um 'bot' – abreviatura de robô – é um programa de software que executa tarefas automatizadas, repetitivas e pré-definidas. Os bots normalmente imitam ou substituem o comportamento do usuário humano. Por serem automatizados, operam muito mais rápido do que os usuários humanos.
-</p>
-<br>
-<hr>
-<br>
-<h4 class="tutotxtt">O que é um bot de atendimento?</h4>
-<br>
-<p>Os bots de atendimento se tornaram cada vez mais comuns no dia a dia das empresas, e tem a intenção de melhorar a qualidade nos canais de mensageria, automatizando atendimentos e otimizando o tempo de resposta para os clientes que entram em contato com uma marca.</p>
-
-<br>
-<p class="hg">fonte: Google</p>
-<br>
-  </div>
-</div>
-  
-
-<div class="ip">
-<div class="card">
-<div class="card-body">
-<h5 class="font-weight-bold text-danger text-uppercase"></h5>
-<h5 style="color: red;" class="font-weight-bold">ENDEREÇO IP ↯</h5> 
-<div class="row">
-<div class="col-9">
-<div class="d-flex align-items-center align-self-start">
-<html>
 <body>
-<script type="text/javascript">
-var userip;
-</script>
-<script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
-<h3 class="mb-0" ><script type="text/javascript">
-document.write(userip);
-</script></h3>
-<p>Seu ip</p>
-</body>
-</html>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-  
-  
-  
-</div>
-
-
-<div class="visitas">
-  <div align=center>
-    <h3>VISITAS</h3>
-    <img src='https://contador.s12.com.br/img-A1Zca74Dc4bAwWY2-9.gif' border='0' alt='contador grátis'>
+    <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <p>Carregando...</p>
     </div>
-</div>
-<hr>
-
- </div>
-
-
-   <div class="final">
-   <a href="#"><p class="far fa-handshake" style="color: white;"> Doar</p></a>
- </div>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js">
-</script>
-<script>
-swal({
-title: 'Salve❤️',
-text: 'Site oficial do Clover-Mods',
-imageUrl: 'marnie.gif',
-footer: 'Clover-Mods',
-imageHeight: 200,
-imageAlt: ':)',
-animation: true
-})
-</script>
-
-
-    <script type="text/javascript">
-   // alert('deseja continuar?')
-        $(document).ready(function(){
-
-          $('.sub-btn').click(function(){
-            $(this).next('.sub-menu').slideToggle();
-            $(this).find('.dropdown').toggleClass('rotate');
-          });
-
-          $('.menu-btn').click(function(){
-            $('.side-bar').addClass('active');
-            $('.menu-btn').css("visibility", "hidden");
-          });
-
-          $('.close-btn').click(function(){
-            $('.side-bar').removeClass('active');
-            $('.menu-btn').css("visibility", "visible");
-          });
-
-        });
-
-    </script>
-  
 </body>
+</body>
+
 </html>
