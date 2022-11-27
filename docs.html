@@ -93,20 +93,80 @@
  <div class="tutotxt"><br>
    <center>
    <div class="ain">
+   <h2 class="nov">Novidades ↯</h2>
      <br>
-      <img class="fotos" src="https://pa1.narvii.com/6810/6ca17ac222220521e1c966cce82a34a52e12f3c4_hq.gif"/>
-      <br><br>
+    <div class="content">
+
+        <div class="slides">
+
+            <input class="input" type="radio" name="slide" id="slide1" checked>
+            <input class="input" type="radio" name="slide" id="slide2">
+            <input class="input" type="radio" name="slide" id="slide3">
+            <input class="input" type="radio" name="slide" id="slide4">
+            <input class="input" type="radio" name="slide" id="slide5">
+
+
+            <div class="slide s1">
+              <a href="https://youtu.be/4yKkQP1TUVA">
+                <img src="https://telegra.ph/file/2fbded2c1cd7029788eb9.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+              <a href="https://youtu.be/gcWltS37VfU">
+                <img src="https://telegra.ph/file/f0416a9495b677683b394.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+              <a href="https://youtu.be/80HdCb-Gxws">
+                <img src="https://telegra.ph/file/8ed535eac9be9e0396ea7.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+              <a href="https://youtube.com/@clovermods">
+                <img src="https://telegra.ph/file/f18047cdf8e0fef5646ec.jpg" alt="">
+                </a>
+            </div>
+            
+            <div class="slide">
+              <a href="#">
+                <img src="https://telegra.ph/file/cf8672ee7328c2961004d.jpg" alt="">
+                </a>
+            </div>
+
+        </div>
+      <div class="ga">
+      <div class="navigation">
+        <label class="bar" for="slide1"><p>ㅤ1ㅤ</p></label>
+        <label class="bar" for="slide2"><p>ㅤ2ㅤ</p></label>
+        <label class="bar" for="slide3"><p>ㅤ3ㅤ</p></label>
+        <label class="bar" for="slide4"><p>ㅤ4ㅤ</p></label>
+        <label class="bar" for="slide5"><p>ㅤ5ㅤ</p></label>
+     </div>
+     </div>
+    </div>
+
    </div>
-   <br>
   </center>
 </div>
-
+<!--
+<div class="tutotxt">
+<div class="contaimer">
+        <button class="laranja" id="btn-laranja"> </button>
+        <button class="vermelho" id="btn-vermelho"> </button>
+        <button class="purpura" id="btn-purpura"> </button>
+        
+</div>
+</div>
+-->
 <div class="tutotxt">
 <div class="ip">
 <div class="card">
 <div class="card-body">
 <h5 class="font-weight-bold text-danger text-uppercase"></h5>
-<h5 style="color: red;" class="font-weight-bold">ENDEREÇO IP ↯</h5> 
+<h5 style="color: red;" class="font-weight-bold">ENDEREÇO IP ↯</h5>
 <div class="row">
 <div class="col-9">
 <div class="d-flex align-items-center align-self-start">
@@ -187,8 +247,6 @@ Um 'bot' – abreviatura de robô – é um programa de software que executa tar
 <p>Os bots de atendimento se tornaram cada vez mais comuns no dia a dia das empresas, e tem a intenção de melhorar a qualidade nos canais de mensageria, automatizando atendimentos e otimizando o tempo de resposta para os clientes que entram em contato com uma marca.</p>
 
 <br>
-<p class="hg">fonte: Google</p>
-<br>
   </div>
 </div>
   
@@ -199,7 +257,7 @@ Um 'bot' – abreviatura de robô – é um programa de software que executa tar
 
 
    <div class="final">
-   <a href="#"><p class="far fa-handshake" style="color: white;"></p></a>
+   <p class="far fa-handshake" style="color: white;"></p>
  </div>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js">
 </script>
@@ -216,10 +274,10 @@ animation: true
 })
 */
 </script>
-<!--
+
 <audio autoplay="true" src="https://j.top4top.io/m_1772xeikf9.mp3">
 </audio>
--->
+
 
     <script type="text/javascript">
    // alert('deseja continuar?')
@@ -242,6 +300,30 @@ animation: true
 
         });
 
+
+let contador = 1;
+
+setInterval( function(){
+    document.getElementById('slide' + contador).checked = true;
+    contador++;
+
+    if(counter > 5 ) {
+        contador = 1;
+    }
+}, 3000 );
+
+
+document.getElementById("btn-laranja").addEventListener("click", function(){
+  document.querySelector("tut").setAttribute("class","laranja");
+})
+
+document.getElementById("btn-vermelho").addEventListener("click", function(){
+  document.querySelector("body").setAttribute("class","vermelho");
+})
+
+document.getElementById("btn-purpura").addEventListener("click", function(){
+  document.querySelector("body").setAttribute("class","purpura");
+})
     </script>
 
 </body>
