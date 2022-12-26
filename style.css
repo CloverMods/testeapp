@@ -9,32 +9,36 @@
 }
 body {
   min-height: 100%;
-  background: #e3f2fd;
+  background: linear-gradient(45deg, darkred, black, darkred);
+  background-size: 200% 200%;
+  animation: color 2.7s ease infinite;
 }
+
 nav {
-  position: fixed;
+  
   top: 0;
   left: 0;
   height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
-  background: #fff;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  background: black;
+  box-shadow: 0 0 3px darkgray;
 }
 nav .logo {
   display: flex;
   align-items: center;
   margin: 0 24px;
+  
 }
 .logo .menu-icon {
-  color: #333;
+  color: white;
   font-size: 24px;
   margin-right: 14px;
   cursor: pointer;
 }
 .logo .logo-name {
-  color: #333;
+  color: white;
   font-size: 22px;
   font-weight: 500;
 }
@@ -45,7 +49,7 @@ nav .sidebar {
   height: 100%;
   width: 260px;
   padding: 20px 0;
-  background-color:#fff;
+  background-color:black;
   box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
 }
@@ -61,6 +65,8 @@ nav.open .sidebar {
 }
 .sidebar-content .list {
   list-style: none;
+  box-shadow: 0 0 3px darkgray;
+  border-radius: 8px;
 }
 .list .nav-link {
   display: flex;
@@ -76,11 +82,11 @@ nav.open .sidebar {
 .nav-link .icon {
   margin-right: 14px;
   font-size: 20px;
-  color: #707070;
+  color: white;
 }
 .nav-link .link {
   font-size: 16px;
-  color: #707070;
+  color: white;
   font-weight: 400;
 }
 .lists .nav-link:hover .icon,
@@ -105,4 +111,28 @@ nav.open ~ .overlay {
 }
 .tutotxt{
   margin: 10px;
+  
 }
+.tutxt{
+  margin: 25px;
+  margin-top: 10px;
+  background-color: black;
+  box-shadow: 0 0 3px darkgray;
+  border-radius: 5px;
+  color: white;
+}
+.footer{
+  text-align: center;
+  font-size: 12px;
+  margin: 10px;
+  color: white;
+  background: black;
+  margin: 0;
+  padding: 15px;
+  box-shadow: 0 0 3px darkgray;
+}
+.footer a{
+  color: red;
+  text-decoration: none;
+}
+
